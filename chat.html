@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="user-info">
+                <span id="currentUser">Пользователь</span>
+                <button class="back-btn" onclick="goBack()">← Назад</button>
+            </div>
+            <div class="chats-list" id="chatsList">
+                <!-- Список чатов будет добавлен -->
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="chat-header" id="chatHeader">
+                <div class="chat-avatar" id="chatAvatar"></div>
+                <div class="chat-info">
+                    <div class="chat-name" id="chatName"></div>
+                </div>
+            </div>
+            <div class="messages-area" id="messagesArea">
+                <!-- Сообщения будут добавлены сюда -->
+            </div>
+            <div class="input-area">
+                <textarea class="message-input" id="messageInput" rows="1" placeholder="Введите сообщение..."></textarea>
+                <button class="send-btn" onclick="sendMessage()">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
